@@ -1,3 +1,5 @@
+package ro.fasttrackit.classroom;
+
 import java.time.LocalDate;
 
 public class Professor {
@@ -6,7 +8,13 @@ public class Professor {
     private LocalDate dateOfBirth;
     private LocalDate dateOfHiring;
     private String emailAddress;
-    private boolean isPHD;
+    private Boolean isPHD;
 
+
+}
+
+    public void isPHD() {
+        System.out.println(Boolean. true);
+    }
 
 }

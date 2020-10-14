@@ -1,13 +1,15 @@
-import java.time.LocalDate;
 package ro.fasttrackit.classroom;
+
+import java.time.LocalDate;
+
 
 public class Student {
     private String lastName;
     private String firstName;
     private LocalDate dateOfBirth;
     private String email;
-    private float Grade;
-    private boolean finished;
+    private Float Grade;
+    private Boolean finished;
 
     public Student(String givenLastName, LocalDate givenDateOfBirth) {
         this.lastName = givenLastName;
