@@ -8,7 +8,7 @@ public class Student {
     private String firstName;
     private LocalDate dateOfBirth;
     private String email;
-    private Float Grade;
+    private Float grade;
     private Boolean finished;
 
     public Student(String givenLastName, LocalDate givenDateOfBirth) {
