@@ -20,10 +20,6 @@ public class Student {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public String getFirstName() {
         return firstName;
     }
@@ -36,10 +32,6 @@ public class Student {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -49,11 +41,11 @@ public class Student {
     }
 
     public Float getGrade() {
-        return Grade;
+        return grade;
     }
 
     public void setGrade(Float grade) {
-        Grade = grade;
+        grade = grade;
     }
 
     public Boolean getFinished() {

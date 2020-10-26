@@ -2,6 +2,9 @@ package ro.fastrackit.temacurs3;
 
 import java.time.LocalDate;
 
-public class Professor implements  Human {
+public class Professor implements Human {
+    private int ranking;
 
-}
+
+    }
+
