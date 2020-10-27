@@ -8,8 +8,7 @@ public class DisplayPrime {
         Scanner scanner = new Scanner(System.in);
         int i =0;
         int num =0;
-        //Empty String
-        String  primeNumbers = "";
+              String  primeNumbers = "";
         System.out.println("Enter the value of n:");
         int n = scanner.nextInt();
         scanner.close();
