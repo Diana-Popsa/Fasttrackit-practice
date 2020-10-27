@@ -25,7 +25,7 @@ public class DisplayPrime {
             }
             if (counter ==2)
             {
-                //Appended the Prime number to the String
+
                 primeNumbers = primeNumbers + i + " ";
             }
         }

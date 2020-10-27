@@ -26,8 +26,7 @@ public class Palindrome {
             palindrome = palindrome / 10;
         }
 
-        // The integer is palindrome if integer and reverse are equal
-        return integer == reverse;
+                return integer == reverse;
 
     }
 
