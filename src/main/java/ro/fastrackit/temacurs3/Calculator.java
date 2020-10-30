@@ -36,7 +36,6 @@ public class Calculator {
                 result = operator1 / operator2;
                 break;
 
-            // operator doesn't match any case constant (+, -, *, /)
             default:
                 System.out.printf("Error! operator is not correct");
                 return;
