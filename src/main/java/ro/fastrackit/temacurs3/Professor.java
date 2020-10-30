@@ -15,13 +15,13 @@ public class Professor implements Human {
     }
 
     @Override
-    public int getAge(){
+    public int getAge() {
         return 40;
     }
 
     @Override
     public ScholarType getScholarType() {
-        return getScholarType(ScholarType) = Professor;
+        return null;
     }
 
 

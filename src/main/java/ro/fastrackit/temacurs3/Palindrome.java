@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Palindrome {
     public static void main(String args[]) {
 
-        System.out.println("Please enter an integer : ");
+        System.out.println("Please enter a number : ");
         int integer = new Scanner(System.in).nextInt();
 
         if (isPalindrome(integer)) {

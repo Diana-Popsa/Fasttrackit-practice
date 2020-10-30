@@ -20,9 +20,10 @@ public class Student implements Human {
     }
 
     @Override
-    public ScholarType getScholarType(){
-        return getScholarType(ScholarType) = Student;
+    public ScholarType getScholarType() {
+        return null;
     }
+
 
     public static void main(String[] args) {
         Student maria = new Student();
