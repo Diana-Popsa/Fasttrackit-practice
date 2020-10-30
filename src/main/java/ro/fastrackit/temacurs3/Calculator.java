@@ -37,7 +37,7 @@ public class Calculator {
                 break;
 
             default:
-                System.out.printf("Error! operator is not correct");
+                System.out.printf("Operator is not correct");
                 return;
         }
 
