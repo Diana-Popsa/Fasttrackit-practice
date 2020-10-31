@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Month {
 
-    // found the yearmonth of method, but the months start from 0 only in the calendar.month method
+    // found the yearmonth.of method, but the months start from 0 only in the calendar.month method?
 
     public static void main(String[] args) {
         int year;
@@ -18,8 +18,8 @@ public class Month {
         scanner.close();
 
         YearMonth yearMonth = YearMonth.of(year, month);
-        int lenghtOdMonth = yearMonth.lengthOfMonth();
-        System.out.println(lenghtOdMonth);
+        int lengthOfMonth = yearMonth.lengthOfMonth();
+        System.out.println(lengthOfMonth + " days.");
 
 
     }
