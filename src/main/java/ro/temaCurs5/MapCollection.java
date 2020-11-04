@@ -1,9 +1,7 @@
-package ro.tema3;
+package ro.temaCurs5;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
 
 public class MapCollection {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ro.tema3;
+package ro.temaCurs5;
 
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package ro.tema3;
+package ro.temaCurs5;
 
 public enum AssignmentTitle {
     MATH,
