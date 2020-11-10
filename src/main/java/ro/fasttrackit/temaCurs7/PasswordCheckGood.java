@@ -59,7 +59,7 @@ public class PasswordCheckGood {
                 continue;
             }
         }
-        return valid;
+        return false;
     }
 
     public static boolean hasAtLeastThreeDigits(String password) {

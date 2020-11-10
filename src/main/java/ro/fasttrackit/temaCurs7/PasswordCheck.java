@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PasswordCheck {
     public static final int LenghtPass = 12;
+    // NOT WORKING
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

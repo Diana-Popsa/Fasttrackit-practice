@@ -66,6 +66,7 @@ public class Collectionn {
         System.out.println(assignmentMap.get(5));
 
 
+
         //TEMA CURS 6
         System.out.println("\n1.1 Streams sort after Unique IDs: ");
         List<String> streamIdList = assignments
@@ -74,7 +75,6 @@ public class Collectionn {
                 .peek(System.out::println)
                 .collect(Collectors.toList());
 
-       // System.out.println("\n1.1 Streams sort after Unique IDs: " + streamIdList);
 
 
         System.out.println("\n1.2 Streams sort after Difficulty Level");

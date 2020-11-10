@@ -69,4 +69,24 @@ public class Assignment {
                 '}';
     }
 
+//    @Override
+//    public boolean equals(Object obj) {
+//        return super.equals(obj);
+//    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Assignment that = (Assignment) o;
+
+        if (uniqueID != null ? !uniqueID.equals(that.uniqueID) : that.uniqueID != null) return false;
+        if (courseNumber != null ? !courseNumber.equals(that.courseNumber) : that.courseNumber != null) return false;
+        if (assignmentTitle != null ? !assignmentTitle.equals(that.assignmentTitle) : that.assignmentTitle != null)
+            return false;
+        if (assignmentDescription != null ? !assignmentDescription.equals(that.assignmentDescription) : that.assignmentDescription != null)
+            return false;
+        return type == that.type;
+    }
 }
