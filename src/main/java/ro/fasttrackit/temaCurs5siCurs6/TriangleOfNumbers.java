@@ -1,6 +1,6 @@
 package ro.fasttrackit.temaCurs5siCurs6;
 
-public class PascalTriangle {
+public class TriangleOfNumbers {
     public static void main(String[] args) {
         int nrOfRows = 5, c=1,x,i,j;
         for(i=0;i<nrOfRows;i++)
