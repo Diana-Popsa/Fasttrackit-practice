@@ -10,4 +10,9 @@ public class Professor{
     private String emailAddress;
     private Boolean isPHD;
 
+//    @Override
+//    public void isPHD() {
+//        System.out.println(Boolean. true);
+//    }
+
 }

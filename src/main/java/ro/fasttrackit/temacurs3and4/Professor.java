@@ -1,6 +1,4 @@
-package ro.fastrackit.temacurs3;
-
-import java.time.LocalDate;
+package ro.fasttrackit.temacurs3and4;
 
 public class Professor implements Human {
     private int ranking;
@@ -16,12 +14,12 @@ public class Professor implements Human {
 
     @Override
     public int getAge() {
-        return 40;
+       return getAge();
     }
 
     @Override
     public ScholarType getScholarType() {
-        return null;
+        return type;
     }
 
 

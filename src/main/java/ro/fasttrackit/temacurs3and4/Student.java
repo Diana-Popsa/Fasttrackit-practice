@@ -1,4 +1,4 @@
-package ro.fastrackit.temacurs3;
+package ro.fasttrackit.temacurs3and4;
 
 public class Student implements Human {
     private float grade;
@@ -21,7 +21,7 @@ public class Student implements Human {
 
     @Override
     public ScholarType getScholarType() {
-        return null;
+        return type;
     }
 
 

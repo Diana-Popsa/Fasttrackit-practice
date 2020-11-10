@@ -1,4 +1,4 @@
-package ro.fastrackit.temacurs3;
+package ro.fasttrackit.temacurs3and4;
 
 import java.time.YearMonth;
 import java.util.Scanner;

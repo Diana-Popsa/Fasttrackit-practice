@@ -1,4 +1,4 @@
-package ro.fastrackit.temacurs3;
+package ro.fasttrackit.temacurs3and4;
 
 public class Primenumber {
     //Calculate if a number is prime / given nr

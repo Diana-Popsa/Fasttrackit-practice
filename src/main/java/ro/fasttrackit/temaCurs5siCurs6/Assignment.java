@@ -1,4 +1,4 @@
-package ro.temaCurs5;
+package ro.fasttrackit.temaCurs5siCurs6;
 
 import java.util.Objects;
 
@@ -65,11 +65,8 @@ public class Assignment {
                 "UniqueID=" + uniqueID +
                 ", courseNumber=" + courseNumber +
                 ", assignmentTitle='" + assignmentTitle + '\'' +
-                ", assignmentDescription='" + assignmentDescription + '\'' +
                 ", difficultyLevel='" + type + '\'' +
                 '}';
     }
-
-
 
 }

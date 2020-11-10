@@ -1,4 +1,4 @@
-package ro.temaCurs5;
+package ro.fasttrackit.temaCurs5siCurs6;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,5 +28,7 @@ public class MapCollection {
 
       //  System.out.println("\nMAP" + assignmentMap);
         System.out.println("\n HashMap + concatenated " + assignmentMap.get("5" + "advanced"));
+
+
     }
 }

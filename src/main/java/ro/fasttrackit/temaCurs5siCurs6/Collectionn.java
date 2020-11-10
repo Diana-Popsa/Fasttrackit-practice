@@ -1,6 +1,7 @@
-package ro.temaCurs5;
+package ro.fasttrackit.temaCurs5siCurs6;
 
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Collectionn {
@@ -51,7 +52,7 @@ public class Collectionn {
 
         Comparator<Assignment> com = new CourseAndAssignmentTitle();
         assignments.sort(com);
-          //  Comparator.comparing((Assignment::getCourseNumber).thenComparing(Assignment::getType));
+        //  Comparator.comparing((Assignment::getCourseNumber).thenComparing(Assignment::getType));
         System.out.println("\nSorted after Course nr and Assignment title: " + assignments);
 
 
@@ -60,17 +61,38 @@ public class Collectionn {
         System.out.println("\n Sorted after Course nr and Difficulty level: " + assignments);
 
 
-      Map<Integer, DifficultyLevel> assignmentMap = assignments.stream().collect(Collectors.toMap(Assignment::getCourseNumber, Assignment::getType));
+        Map<Integer, DifficultyLevel> assignmentMap = assignments.stream().collect(Collectors.toMap(Assignment::getCourseNumber, Assignment::getType));
         System.out.println("\nMap: " + assignmentMap);
         System.out.println(assignmentMap.get(5));
 
 
+        //TEMA CURS 6
+        System.out.println("\n1.1 Streams sort after Unique IDs: ");
+        List<String> streamIdList = assignments
+                .stream()
+                .map(singleAssignment -> singleAssignment.getUniqueID())
+                .peek(System.out::println)
+                .collect(Collectors.toList());
+
+       // System.out.println("\n1.1 Streams sort after Unique IDs: " + streamIdList);
 
 
+        System.out.println("\n1.2 Streams sort after Difficulty Level");
+        assignments
+                .stream()
+                .filter(singleType -> singleType.getType().equals(DifficultyLevel.EASY) || singleType.getType().equals(DifficultyLevel.MEDIUM))
+                .peek(System.out::println)
+                .collect(Collectors.toList());
+        //not working   .forEach(singleType -> System.out.println("\n1.2 Streams sort after Difficulty Level "+ assignments));
 
 
-
-
+        System.out.println("\n 1.4 Return HashMap having unique IDs as Keys and Assignments as values.:");
+        Map<String, Assignment> streamHashMap2 = assignments
+                .stream()
+                .collect(Collectors.toMap(Assignment::getUniqueID, Function.identity()));
+        for (var i : streamHashMap2.entrySet()) {
+            System.out.println(String.format(" Key is: %s. %n Value is: %s", i.getKey(), i.getValue()));
+        }
     }
 
 
