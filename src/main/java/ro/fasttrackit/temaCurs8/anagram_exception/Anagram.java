@@ -13,14 +13,14 @@ public class Anagram {
         try {
             isAnagram(word, anagram);
             System.out.printf("%s is an anagram of %s", word, anagram);
-        } catch (InvalidAnagramException theExceptionCaught){
+        } catch (InvalidAnagramException iae) {
             System.err.println(word + " and " + anagram + " are not anagrams.");
         }
 
 
     }
 
-    public static boolean isAnagram(String word, String anagram) throws Exception{
+    public static boolean isAnagram(String word, String anagram) throws Exception {
         int word1 = word.length();
         int an = anagram.length();
 
