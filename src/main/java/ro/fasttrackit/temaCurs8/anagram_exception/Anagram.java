@@ -1,4 +1,4 @@
-package ro.fasttrackit.temaCurs8;
+package ro.fasttrackit.temaCurs8.anagram_exception;
 
 import java.util.*;
 
