@@ -1,4 +1,4 @@
-package ro.fasttrackit.temaCurs7.password_check;
+package ro.fasttrackit.temaCurs7.Generics;
 
 import ro.fasttrackit.temaCurs7.Generics.Human;
 

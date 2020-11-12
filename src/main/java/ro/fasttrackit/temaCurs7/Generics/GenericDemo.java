@@ -1,7 +1,5 @@
 package ro.fasttrackit.temaCurs7.Generics;
 
-import ro.fasttrackit.temaCurs7.password_check.Student;
-
 import java.util.ArrayList;
 import java.util.List;
 
