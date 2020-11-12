@@ -1,4 +1,6 @@
-package ro.fasttrackit.temaCurs7;
+package ro.fasttrackit.temaCurs7.password_check;
+
+import ro.fasttrackit.temaCurs7.Generics.Human;
 
 public class Student implements Human {
     private String name;

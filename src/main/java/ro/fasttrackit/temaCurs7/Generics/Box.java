@@ -1,6 +1,6 @@
-package ro.fasttrackit.temaCurs7;
+package ro.fasttrackit.temaCurs7.Generics;
 
-public class Box<T> {
+public class Box<T extends Human> {
     private T theType;
 
     public Box(T givenType) {

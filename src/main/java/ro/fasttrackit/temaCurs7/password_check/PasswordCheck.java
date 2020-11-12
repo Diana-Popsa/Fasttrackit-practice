@@ -1,4 +1,4 @@
-package ro.fasttrackit.temaCurs7;
+package ro.fasttrackit.temaCurs7.password_check;
 
 import java.util.Scanner;
 

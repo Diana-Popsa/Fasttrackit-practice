@@ -1,4 +1,6 @@
-package ro.fasttrackit.temaCurs7;
+package ro.fasttrackit.temaCurs7.Generics;
+
+import ro.fasttrackit.temaCurs7.password_check.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +34,7 @@ public class GenericDemo {
         studentList.add(s3);
         return studentList;
 
-        // 1.3 After Box <T, Human> ->
+        // 1.3 After Box <Human> -> Human is an instance(class), and we can use only generics between the diamond operators.
+        // 1.4 Nothing changed. We already have the <? extends Human> so the Human interface was already included.
     }
 }
