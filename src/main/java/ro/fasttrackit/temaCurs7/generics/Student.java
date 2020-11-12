@@ -1,6 +1,4 @@
-package ro.fasttrackit.temaCurs7.Generics;
-
-import ro.fasttrackit.temaCurs7.Generics.Human;
+package ro.fasttrackit.temaCurs7.generics;
 
 public class Student implements Human {
     private String name;

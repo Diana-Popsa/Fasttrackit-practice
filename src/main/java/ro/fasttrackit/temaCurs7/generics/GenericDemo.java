@@ -1,4 +1,4 @@
-package ro.fasttrackit.temaCurs7.Generics;
+package ro.fasttrackit.temaCurs7.generics;
 
 import java.util.ArrayList;
 import java.util.List;
