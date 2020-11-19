@@ -2,7 +2,6 @@ package ro.fasttrackit.temaCurs8.passwordcheck_exceptions;
 
 import java.util.Scanner;
 
-// nu printeza nimic la getMessage
 // cum e mai ok la RAND 53: onlyLettersAndNum <= 0 sau <1?
 public class PasswordWithExceptions {
     public static void main(String[] args) throws Exception {
