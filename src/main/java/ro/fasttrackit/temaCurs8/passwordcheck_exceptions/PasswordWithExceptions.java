@@ -1,4 +1,4 @@
-package ro.fasttrackit.temaCurs8.passcheck_exceptions;
+package ro.fasttrackit.temaCurs8.passwordcheck_exceptions;
 
 import java.util.Scanner;
 
@@ -60,9 +60,9 @@ public class PasswordWithExceptions {
         }
 
         if (numCount >= 3 && upperCount >= 1 && length >= 12 && lowCount >= 1 && onlyLettersAndNum < 1) {
-            System.out.println("Password is valid!");
+            System.out.println(password + " Password is valid!");
         }
-        if (numCount < 3 && upperCount < 1 && length < 12 && lowCount < 1 && onlyLettersAndNum > 0) {
+        if (!result.isBlank()) {
             throw new InvalidPasswordException(result);
         }
     }
