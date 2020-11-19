@@ -1,17 +1,23 @@
-package ro.fasttrackit.temaCurs7.password_check;
-
+package ro.fasttrackit.temaCurs8.passcheck_exceptions;
 
 import java.util.Scanner;
 
-public class PasswordCheck {      // cum e mai ok la RAND 53: onlyLettersAndNum <= 0 sau <1?
-    public static void main(String[] args) {
+// nu printeza nimic la getMessage
+// cum e mai ok la RAND 53: onlyLettersAndNum <= 0 sau <1?
+public class PasswordWithExceptions {
+    public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        System.out.print("Input a password: ");
-        String password = input.nextLine();
-        System.out.println(password + " " + passwordCheck(password));
+        try {
+            System.out.print("Input a password: ");
+            String password = input.nextLine();
+            passwordCheck(password);
+        } catch (InvalidPasswordException ipe) {
+            System.out.println("Password Invalid\n" + ipe.getMessage());
+            ;
+        }
     }
 
-    public static String passwordCheck(String password) {
+    public static void passwordCheck(String password) throws Exception {
         String result = "";
         int length = 0;
         int numCount = 0;
@@ -26,10 +32,10 @@ public class PasswordCheck {      // cum e mai ok la RAND 53: onlyLettersAndNum 
             } else {
                 onlyLettersAndNum++;
             }
-            if (password.charAt(i) >= 48 && password.charAt(i) <= 57) {
+            if ((password.charAt(i) >= 48 && password.charAt(i) <= 57)) {
                 numCount++;
             }
-            if (password.charAt(i) >= 65 && password.charAt(i) <= 90) {
+            if ((password.charAt(i) >= 65 && password.charAt(i) <= 90)) {
                 upperCount++;
             }
             if (password.charAt(i) >= 97 && password.charAt(i) <= 122) {
@@ -52,11 +58,13 @@ public class PasswordCheck {      // cum e mai ok la RAND 53: onlyLettersAndNum 
         if (lowCount < 1) {
             result = result + "\nPassword must contain at least one lowercase letter!";
         }
-        if (numCount >= 3 && upperCount >= 1 && length >= 12 && lowCount >= 1 && onlyLettersAndNum <= 0) {
+
+        if (numCount >= 3 && upperCount >= 1 && length >= 12 && lowCount >= 1 && onlyLettersAndNum < 1) {
             System.out.println("Password is valid!");
         }
-        return result;
+        if (numCount < 3 && upperCount < 1 && length < 12 && lowCount < 1 && onlyLettersAndNum > 0) {
+            throw new InvalidPasswordException(result);
+        }
     }
-
-
 }
+

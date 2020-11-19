@@ -1,8 +1,8 @@
-package ro.fasttrackit.temaCurs7.password_check;
+package ro.extra.passwordCheck_c07_not_working;
 
 import java.util.Scanner;
 
-public class Four {
+public class NotWorkingPasscheck {
     public static void main(String[] args) {
         int min = 12;
         int digit = 0;
@@ -58,12 +58,12 @@ public class Four {
                 }
             }
             if (lowCount > 0 && upCount > 0) {
-                System.out.println( password + " Password must be at least " + min + " characters:");
-                System.out.println(" You need at least 3 digit:");
+                System.out.println(password + " Password must be at least " + min + " characters:");
+                System.out.println(" You need at least 3 digits!");
             }
             if (password.length() >= min && lowCount > 0 && upCount > 0 && digit == 0) {
-                System.out.println(password + " You need at least three digit:");
-                System.out.println(" You need at least one special character:");
+                System.out.println(password + " You need at least three digit!");
+                System.out.println(" You need at least one special character!");
             }
         }
     }
