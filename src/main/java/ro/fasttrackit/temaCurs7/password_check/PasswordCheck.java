@@ -53,7 +53,7 @@ public class PasswordCheck {      // cum e mai ok la RAND 53: onlyLettersAndNum 
             result = result + "\nPassword must contain at least one lowercase letter!";
         }
         if (numCount >= 3 && upperCount >= 1 && length >= 12 && lowCount >= 1 && onlyLettersAndNum <= 0) {
-            System.out.println("Password is valid!");
+            System.out.println(password + "Password is valid!");
         }
         return result;
     }
