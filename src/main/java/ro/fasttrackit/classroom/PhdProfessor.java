@@ -2,9 +2,9 @@ package ro.fasttrackit.classroom;
 
 public class PhdProfessor extends Professor {
 
-//    public void isPHD() {
-//        @Override
-//                System.out.println(Boolean. true);
-//    }
+    @Override
+    public boolean isPhd() {
+        return false;
+    }
 }
 

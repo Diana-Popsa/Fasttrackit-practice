@@ -4,6 +4,7 @@ public class Student implements Human {
     private float grade;
     private String name;
     private StudentType type;
+    private int age;
 
 
     public StudentType getType() {
@@ -16,7 +17,7 @@ public class Student implements Human {
 
     @Override
     public int getAge() {
-        return 21;
+        return this.age;
     }
 
     @Override

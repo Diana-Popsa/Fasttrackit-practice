@@ -26,7 +26,7 @@ public class Palindrome {
             palindrome = palindrome / 10;
         }
 
-                return integer == reverse;
+        return integer == reverse;
 
     }
 

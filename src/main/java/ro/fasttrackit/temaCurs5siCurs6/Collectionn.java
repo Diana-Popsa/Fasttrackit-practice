@@ -4,9 +4,9 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class Collectionn {
+public class Collectionn {// should have used HashSet - it has unique elements
 
-
+    // which are determined by the object's equals
     public static void main(String[] args) {
         List<Assignment> assignments = new ArrayList<>();
 
@@ -66,7 +66,6 @@ public class Collectionn {
         System.out.println(assignmentMap.get(5));
 
 
-
         //TEMA CURS 6
         System.out.println("\n1.1 Streams sort after Unique IDs: ");
         List<String> streamIdList = assignments
@@ -74,7 +73,6 @@ public class Collectionn {
                 .map(singleAssignment -> singleAssignment.getUniqueID())
                 .peek(System.out::println)
                 .collect(Collectors.toList());
-
 
 
         System.out.println("\n1.2 Streams sort after Difficulty Level");

@@ -3,6 +3,7 @@ package ro.fasttrackit.temacurs3and4;
 public class Professor implements Human {
     private int ranking;
     private ProfessorType type;
+    private int age;
 
     public ProfessorType getType() {
         return type;
@@ -14,7 +15,7 @@ public class Professor implements Human {
 
     @Override
     public int getAge() {
-       return getAge();
+        return this.age;
     }
 
     @Override

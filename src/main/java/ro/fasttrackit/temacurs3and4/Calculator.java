@@ -18,8 +18,7 @@ public class Calculator {
 
         double result;
 
-        switch(operationType)
-        {
+        switch (operationType) {
             case '+':
                 result = operator1 + operator2;
                 break;

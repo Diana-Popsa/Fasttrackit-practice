@@ -17,28 +17,35 @@ public class PrintAnything {
         printSomething(num);
     }
 
-    static void printSomething(int intNumber){
+    static void printSomething(int intNumber) {
         System.out.println("int as primitive: " + intNumber);
     }
-    static void printSomething(long longNumber){
+
+    static void printSomething(long longNumber) {
         System.out.println("long as primitive: " + longNumber);
     }
-    static void printSomething(Long wrappedLong){
+
+    static void printSomething(Long wrappedLong) {
         System.out.println("Long as Wrapper Class: " + wrappedLong);
     }
-    static void printSomething(String helloText){
+
+    static void printSomething(String helloText) {
         System.out.println("Text:" + helloText);
     }
-    static void printSomething(Double wrappedDouble){
+
+    static void printSomething(Double wrappedDouble) {
         System.out.println("Double as Wrapper Class: " + wrappedDouble);
     }
-    static void printSomething(Object catString){
+
+    static void printSomething(Object catString) {
         System.out.println("Object: " + catString);
     }
-    static void printSomething(int... intArray){
+
+    static void printSomething(int... intArray) {
         System.out.println("int[]: " + intArray);
     }
-    static void printSomething(long... longArray){
+
+    static void printSomething(long... longArray) {
         System.out.println("long[]: " + longArray);
     }
 

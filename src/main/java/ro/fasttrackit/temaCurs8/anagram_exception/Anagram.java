@@ -2,7 +2,7 @@ package ro.fasttrackit.temaCurs8.anagram_exception;
 
 import java.util.*;
 
-public class Anagram {
+public class Anagram { //logic can be improved
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a word:");
