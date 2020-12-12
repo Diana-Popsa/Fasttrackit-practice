@@ -3,7 +3,7 @@ package ro.fasttrackit.temaCurs7.password_check;
 
 import java.util.Scanner;
 
-public class PasswordCheck {      // cum e mai ok la RAND 53: onlyLettersAndNum <= 0 sau <1?
+public class PasswordCheck {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Input a password: ");
