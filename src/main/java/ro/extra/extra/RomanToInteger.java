@@ -26,4 +26,5 @@ public class RomanToInteger {
         result = result + map.get(s.charAt(s.length()-1));
         return result;
     }
+
 }
