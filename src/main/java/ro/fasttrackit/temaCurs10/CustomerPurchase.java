@@ -1,13 +1,5 @@
 package ro.fasttrackit.temaCurs10;
 
-import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.ss.util.CellAddress;
-
-import java.io.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 public class CustomerPurchase {
     private int ID;
     private String purchasedProduct;
